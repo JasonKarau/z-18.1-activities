@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.logo {
+    background: white;
+    height: 230px;
+    background-image: url("../images/jakes-logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Navigation styles */
+.nav {
+    display: flex;
+    background-color: black;
+    padding: 20px;
+}
+
+.left, .center, .right {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left, .right {
+    width: 25%;
+}
+
+.center {
+    width: 50%;
+}
+
+.center a {
+    color: white;
+    font-size: 16px;
+    padding: 15px;
+    width: 50%;
+    text-decoration: none;
+    text-align: center;
+}
+
+.center a:hover {
+    text-decoration: underline;
+}
+
+button {
+    color: black;
+    font-size: 16px;
+    padding: 15px;
+    width: 50%;
+}
+
+.right button {
+    background-color: yellow;
+}
+
+.left button {
+    background-color: skyblue;
+}
+/* Column styles */
+.column {
+    display: flex;
+    height: 1200px;
+    width: 800px;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.meal1, .meal2, .meal3 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all .15s ease-in-out;
+    cursor: pointer;
+}
+
+.meal1 {
+    margin-top: 20px;
+    background-image: url("../images/steak.png");
+}
+
+.meal2 {
+    background-image: url("../images/soup.png");
+}
+
+.meal3 {
+    background-image: url("../images/cheesecake.png");
+}
+
+.meal1:hover, .meal2:hover, .meal3:hover {
+    transform: scale(1.05);
+}
+
+.text {
+    background: rgb(0,0,0,0.7);
+    width: 100%;
+    padding: 5px 10px;
+    color: white;
+}
+
+.text p {
+    color: rgba(255,255,255, 0.7);
+}
+/* Footer Styles */
+.footer {
+    padding: 20px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.fb, .tw, .ig {
+    text-decoration: none;
+    padding: 20px 50px 20px 50px;
+}
+
+.fb {
+    color: skyblue;
+}
+
+.tw {
+    color: yellow;
+}
+
+.ig {
+    color: red;
+}
+
+.fb:hover, .tw:hover, .ig:hover {
+    text-decoration: underline;
+}
